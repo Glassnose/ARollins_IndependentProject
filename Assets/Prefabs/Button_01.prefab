@@ -9,9 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2232968605725460983}
-  - component: {fileID: 1835111711019930578}
   - component: {fileID: 1835111711019930585}
-  - component: {fileID: 1835111711019930580}
   m_Layer: 0
   m_Name: Button_01
   m_TagString: Untagged
@@ -36,19 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 190, z: 90}
---- !u!65 &1835111711019930578
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564659683148288845}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 155.18436, y: 1058.6388, z: 166.73726}
-  m_Center: {x: 17.748016, y: 367.6931, z: 7.9982433}
 --- !u!95 &1835111711019930585
 Animator:
   serializedVersion: 5
@@ -70,18 +55,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1835111711019930580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564659683148288845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 448efeafd7207c84399d283de5e87244, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2232048639982595763
 GameObject:
   m_ObjectHideFlags: 0

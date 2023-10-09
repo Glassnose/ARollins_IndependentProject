@@ -4,22 +4,37 @@ using UnityEngine;
 
 public class DoorTrigger : MonoBehaviour
 {
-    Animator anim;
+    public GameObject Instruction;
+    public GameObject AnimeObject;
+    public bool Action = false;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = gameObject.GetComponent<Animator>();
+        Instruction.SetActive(false);
     }
 
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.transform.tag == "DoorTrigger")
+        {
+            Instruction.SetActive(true);
+            Action = false;
+        }
+    }
+  
     // Update is called once per frame
     void Update()
     {
-        bool down = Input.GetKey(KeyCode.E);
+        bool down = Input.GetKey(KeyCode.Mouse0);
 
-        if (down)
+       if (down)
         {
-            anim.SetTrigger("Press");
+            Instruction.SetActive(false);
+            AnimeObject.GetComponent<Animator>().Play("Press");
+            Action = false;
         }
     }
+
 }
