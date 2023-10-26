@@ -8,13 +8,15 @@ public class DoorButtonPress : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        /*if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Debug.Log("Button Press1");
             anim.SetTrigger("Press");
-        }
+        }*/
 
-        if (other.CompareTag("Player"))
+        bool down = Input.GetKey(KeyCode.Mouse0);
+
+        if (other.CompareTag("Player") && (down))
         {
             Debug.Log("Button Press2");
             anim.SetTrigger("Press");

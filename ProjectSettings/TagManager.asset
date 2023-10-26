@@ -6,6 +6,8 @@ TagManager:
   tags:
   - DoorButton
   - DoorTrigger
+  - Chip1
+  - Coffee1
   layers:
   - Default
   - TransparentFX

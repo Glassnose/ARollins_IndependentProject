@@ -12,7 +12,8 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         snacksPrefabIndex = Random.Range(0,snacksPrefabs.Length);
-        Instantiate(snacksPrefabs[snacksPrefabIndex], spawnLocation.transform.position, Quaternion.identity); 
+        Instantiate(snacksPrefabs[snacksPrefabIndex], spawnLocation.transform.position + new Vector3(0,0,0), Quaternion.identity);
+        
     }
 
     // Update is called once per frame
